@@ -133,9 +133,11 @@ header {
                             &.drpdwn {
                                 transition: all ease 0.4s;
                                 position: relative;
-                                 &> a{
+
+                                &>a {
                                     position: relative;
-                                    &::before{
+
+                                    &::before {
                                         content: "";
                                         position: absolute;
                                         background-image: url(../images/drp-arrw.svg);
@@ -146,7 +148,7 @@ header {
                                         top: 30px;
                                         right: -16px;
                                     }
-                                 }
+                                }
 
                                 &:hover {
                                     .drpdwn_cntnt {
@@ -173,6 +175,7 @@ header {
 
                                     li {
                                         width: 100%;
+
                                         a {
                                             color: #39536E;
                                             font-family: "Telugu MN";
@@ -291,7 +294,8 @@ header {
             .img {
                 background-color: #faf6f3;
                 padding: 35px 28px 35px 27px;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
@@ -377,7 +381,7 @@ header {
 .commision {
     padding-top: 60px;
 
-    .row{
+    .row {
         row-gap: 40px;
     }
 
@@ -943,6 +947,7 @@ footer {
 
 .contact-us {
     padding: 60px 0;
+
     h3 {
         color: #325496;
 
@@ -957,15 +962,18 @@ footer {
         // margin-bottom: 8px;
         margin-bottom: 0;
     }
+
     p {
         color: #466688;
         font-family: "Inria Serif";
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 150%; /* 24px */
+        line-height: 150%;
+        /* 24px */
         margin-bottom: 24px;
     }
+
     .inputcontainer {
         border: 1px solid #325496;
         background: #f3efea;
@@ -975,7 +983,9 @@ footer {
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 150%; /* 24px */
+        line-height: 150%;
+
+        /* 24px */
         input[type="text"],
         input[type="email"],
         input[type="tel"] {
@@ -984,6 +994,7 @@ footer {
             border: none;
             background: transparent;
         }
+
         textarea {
             width: 100%;
             padding: 10px;
@@ -994,6 +1005,7 @@ footer {
             resize: none;
         }
     }
+
     input[type="submit"] {
         color: #405d7b;
         font-family: "Telugu MN";
@@ -1009,12 +1021,15 @@ footer {
 
 .contact-row {
     padding-bottom: 60px;
+
     .cnrowinner {
         padding: 54px 30px;
         background-size: cover !important;
+
         ul {
             display: flex;
             justify-content: space-between;
+
             li {
                 h4 {
                     color: #395363;
@@ -1025,6 +1040,7 @@ footer {
                     line-height: normal;
                     margin-bottom: 20px;
                 }
+
                 a {
                     color: #395363;
                     font-family: "Inria Serif";
@@ -1032,12 +1048,15 @@ footer {
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+
                     img {
                         margin-right: 10px;
                     }
                 }
+
                 &:last-child {
                     a {
+
                         // text-decoration: underline;
                         span {
                             display: inline-block;
@@ -1052,6 +1071,7 @@ footer {
 
 .about {
     padding-top: 60px;
+
     .abt-top {
         h3 {
             color: #39536e;
@@ -1065,6 +1085,7 @@ footer {
             text-transform: capitalize;
             margin-bottom: 20px;
         }
+
         p {
             color: #405d7b;
             text-align: center;
@@ -1072,17 +1093,21 @@ footer {
             font-size: 24px;
             font-style: italic;
             font-weight: 400;
-            line-height: 135%; /* 32.4px */
+            line-height: 135%;
+            /* 32.4px */
             text-transform: capitalize;
             max-width: 610px;
             margin: 0 auto;
+
             span {
                 position: absolute;
             }
         }
     }
+
     .abt-mid {
         padding: 60px 0;
+
         p {
             margin-bottom: 30px;
             color: #466688;
@@ -1091,30 +1116,36 @@ footer {
             font-style: italic;
             font-weight: 400;
             line-height: 150%;
+
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
+
     .abt-btm {
         padding: 30px 38px;
         border-radius: 12px;
         background: rgba(255, 236, 236, 0.5);
         position: relative;
         margin-bottom: 60px;
+
         .quotes {
             position: absolute;
             width: 46px;
             height: 46px;
+
             &.quotes-1 {
                 left: 48px;
                 top: -22px;
             }
+
             &.quotes-2 {
                 right: 270px;
                 bottom: -21px;
             }
         }
+
         p {
             color: #405d7b;
             text-align: center;
@@ -1122,26 +1153,33 @@ footer {
             font-size: 18px;
             font-style: normal;
             font-weight: 700;
-            line-height: 150%; /* 27px */
+            line-height: 150%;
+            /* 27px */
             margin-bottom: 20px;
+
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
+
     .abt-gallery {
         padding-bottom: 60px;
+
         .w40 {
             width: 40%;
         }
+
         .w60 {
-            width: 60%;
+            width: 609%;
         }
+
         .midalign {
             justify-content: center;
             display: flex;
             align-items: center;
         }
+
         .link {
             color: #39536e;
             font-family: "Inria Serif";
@@ -1151,6 +1189,7 @@ footer {
             line-height: normal;
             text-transform: capitalize;
         }
+
         .gap20 {
             display: flex;
             gap: 20px;
