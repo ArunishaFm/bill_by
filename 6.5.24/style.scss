@@ -1,0 +1,1176 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: "Telugu MN";
+    src: url(../fonts/Telugu\ MN.ttc);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li,
+ol {
+    list-style: none;
+}
+
+
+button:focus {
+    outline: none !important;
+}
+
+h1 {
+    color: #253647;
+    font-family: "Antic Didone";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: "Telugu MN";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #325496;
+}
+
+p {
+    color: #466688;
+    font-family: "Inria Serif";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn {
+    color: #405D7B;
+    font-family: "Telugu MN";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    padding: 0;
+    transition: all 0.4s;
+    border-bottom: 1px solid #405D7B;
+    border-radius: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:hover {
+        color: #405D7B;
+    }
+}
+
+header {
+    background-color: #fff;
+
+    .menu-area {
+        .totl_head {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .main-logo {
+                max-width: 104px;
+            }
+
+            .main_links {
+                width: calc(100% - 772px);
+
+                #navigation {
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 50px;
+                        position: relative;
+
+                        li {
+                            a {
+                                color: #39536E;
+                                font-family: "Telugu MN";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                text-transform: uppercase;
+                                padding: 25px 0;
+                            }
+
+                            &.drpdwn {
+                                transition: all ease 0.4s;
+                                position: relative;
+                                 &> a{
+                                    position: relative;
+                                    &::before{
+                                        content: "";
+                                        position: absolute;
+                                        background-image: url(../images/drp-arrw.svg);
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        width: 10px;
+                                        height: 10px;
+                                        top: 30px;
+                                        right: -16px;
+                                    }
+                                 }
+
+                                &:hover {
+
+                                    &> a{
+                                        &::before{
+                                            rotate: 180deg;
+                                        }
+                                     }
+
+                                    .drpdwn_cntnt {
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+                                }
+
+                                .drpdwn_cntnt {
+                                    position: absolute;
+                                    background: rgba(239, 235, 235, 0.699);
+                                    width: 180px;
+                                    z-index: 1;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: all ease 0.5s;
+                                    padding: 16px 0;
+                                    top: 52px;
+                                    left: 0;
+                                    display: flex;
+                                    column-gap: 1.25rem;
+                                    align-items: baseline;
+                                    flex-direction: column;
+
+                                    li {
+                                        width: 100%;
+                                        a {
+                                            color: #39536E;
+                                            font-family: "Telugu MN";
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: normal;
+                                            text-transform: uppercase;
+                                            width: 100%;
+                                            display: inline-block;
+                                            padding: 5px 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero_bnnr {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    .top_text_div {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 238px 0 319px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        p {
+            color: #39536E;
+            font-family: "Telugu MN";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 27px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            max-width: 945px;
+        }
+    }
+
+    &.innr_bnr {
+        h2 {
+            margin-bottom: 22px;
+            line-height: 28px;
+        }
+
+        ul {
+            &.brdcamp {
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                column-gap: 28px;
+
+                li {
+                    color: #405D7B;
+                    font-family: "Telugu MN";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 7px;
+                        right: -19px;
+                        background-image: url(../images/right-arrw.svg);
+                        background-repeat: no-repeat;
+                        width: 12px;
+                        height: 12px;
+                    }
+
+                    &:last-child {
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    a {
+                        color: #405D7B;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec_2 {
+    padding: 60px 0 27px;
+    h2{
+        line-height: 40px;
+    }
+
+    .row {
+        margin-top: 40px;
+
+        .card {
+            background-color: #fff;
+            border-radius: 0;
+            border: none;
+            height: 100%;
+
+            .img {
+                background-color: #faf6f3;
+                padding: 35px 28px 35px 27px;
+                img{
+                    width: 100%;
+                }
+            }
+
+
+            .txt {
+                margin-top: 24px;
+                text-align: center;
+
+                h3 {
+                    color: #39536E;
+                    font-family: "Telugu MN";
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    letter-spacing: -0.32px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.sec_3 {
+    .side_bnr {
+        background-color: #F2E7DA;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .side_img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+        }
+
+        .top_txt {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding-left: 90px;
+            display: flex;
+            align-items: center;
+
+            h2 {
+                max-width: 417px;
+                margin-bottom: 0;
+                line-height: 32px;
+            }
+
+            p {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    .sbscr {
+        text-align: center;
+        padding-top: 59px;
+        background-color: #F2E7DA;
+
+        h2 {
+            margin-bottom: 0;
+            line-height: 30px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        img {
+            margin-top: 46px;
+        }
+    }
+}
+
+.commision {
+    padding-top: 60px;
+
+    .row{
+        row-gap: 40px;
+    }
+
+    .col-12 {
+        h2 {
+            margin-bottom: 16px;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        p {
+            text-align: center;
+            color: #405D7B;
+            font-weight: 700;
+            max-width: 956px;
+            margin: auto;
+        }
+    }
+
+
+    .row {
+        margin-top: 40px;
+
+        .card {
+            background-color: #fff;
+            border-radius: 0;
+            border: none;
+            text-align: center;
+
+            img {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.blog {
+    padding-top: 72px;
+
+    h2 {
+        margin-bottom: 16px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .row {
+        margin-top: 40px;
+
+        .card {
+            background-color: #fff;
+            border-radius: 0;
+            border: none;
+
+            img {
+                width: 100%;
+            }
+
+            .txt {
+                margin-top: 20px;
+
+                h4 {
+                    margin-bottom: 12px;
+                    color: #405D7B;
+                    font-family: "Inria Serif";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #f5f5f6;
+    width: 100%;
+    padding: 43px 0 31px;
+    margin-top: 59px;
+
+
+
+
+    .sbcrb {
+        margin-bottom: 15px;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 29px;
+        }
+
+        form {
+            position: relative;
+
+            .form-control {
+                width: 100%;
+                border-radius: 50px;
+                border: 1px solid #B4B4B4;
+                background-color: #fff;
+                padding: 16px 9px 18px 19px;
+                color: #000;
+                font-family: "Inria Serif";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &::placeholder {
+                    color: #466688;
+                    font-family: "Inria Serif";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .btn {
+                position: absolute;
+                right: 35px;
+                top: 21px;
+            }
+        }
+    }
+
+    .logo {
+        width: 203px;
+    }
+
+    ul {
+        &.scl {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+
+            li {
+
+                a {
+                    width: 41px;
+                    height: 41px;
+                    border: 1px solid #405D7B;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+        &.pge_links {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            justify-content: center;
+
+            li {
+                a {
+                    color: #39536E;
+                    font-family: "Telugu MN";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .row {
+        &:last-child {
+            padding-top: 48px;
+            border-top: 1px solid #39536E99;
+
+            .col-lg-3 {
+                padding: 0;
+            }
+
+            p {
+                color: #39536E;
+                font-family: "Inria Serif";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 0;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                column-gap: 23px;
+                justify-content: flex-end;
+
+                li {
+                    a {
+                        color: #39536E;
+                        font-family: "Inria Serif";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gallery {
+    padding-top: 60px;
+
+    .row {
+        row-gap: 40px;
+    }
+
+    .col-lg-3 {
+        padding: 0 15px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .col-lg-4{
+        img{
+            width: 100%;
+        }
+    }
+
+    &.abstrt {
+        .row {
+            justify-content: center;
+        }
+
+        .col-lg-6 {
+            padding: 0 15px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.blog_post {
+    padding-top: 60px;
+
+    .row {
+        row-gap: 30px;
+
+        &:last-child {
+            margin-top: 30px;
+        }
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 0;
+        border: none;
+
+        img {
+            width: 100%;
+        }
+
+        .txt {
+            margin-top: 20px;
+
+            h4 {
+                color: #39536E;
+                font-family: "Inria Serif";
+                font-size: 20px;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    ul {
+        &.pegination {
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+
+            li {
+                a {
+                    width: 41px;
+                    height: 41px;
+                    border-radius: 50%;
+                    border: 1px solid #EBE4DE;
+                    transition: all 0.4s;
+                    color: #39536E;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 150%;
+                    display: inline-block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: #EBE4DE;
+                    }
+                }
+
+                &:last-child {
+                    background-image: url(../images/double-arrw.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+}
+
+.blg_txt {
+    padding-top: 60px;
+
+    .txt {
+        h2 {
+            line-height: 27px;
+            margin-bottom: 16px;
+        }
+
+        h5 {
+            color: #405D7B;
+            font-family: "Telugu MN";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            text-transform: lowercase;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #466688;
+            font-family: "Inria Serif";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 28px;
+
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .img_dv {
+        text-align: end;
+        position: relative;
+
+        .sml_img {
+            position: absolute;
+            bottom: -210px;
+            left: 0;
+        }
+    }
+}
+
+.blg_detls {
+    padding-top: 60px;
+
+    h2 {
+        line-height: 29px;
+        margin-bottom: 48px;
+        font-size: 27px;
+        color: #405D7B;
+        text-transform: capitalize;
+    }
+
+    .dtl {
+        display: flex;
+        column-gap: 16px;
+
+        img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        .txt {
+            p {
+                color: #405D7B;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 150%;
+                margin-bottom: 0;
+            }
+
+            ul {
+                display: flex;
+                column-gap: 23px;
+                align-items: center;
+                padding: 3px 0;
+
+                li {
+                    color: #405D7B;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    position: relative;
+
+                    &::before {
+                        content: ".";
+                        position: absolute;
+                        font-size: 37px;
+                        color: #405D7B;
+                        top: 1px;
+                        left: -15px;
+                        line-height: 0;
+
+                    }
+
+                    &:first-child {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+
+
+    .scl_shr {
+        margin-top: 40px;
+
+        h5 {
+            color: #405D7B;
+            font-family: "Inria Serif";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            &.shre {
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+
+                li {
+                    a {
+                        width: 41px;
+                        height: 41px;
+                        border: 1px solid #405D7B;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .dtl_txt {
+        margin-top: 30px;
+
+        h6 {
+            margin-bottom: 20px;
+            color: #39536E;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 120%;
+
+            font-family: "Inria Serif";
+        }
+
+        p {
+            color: #39536E;
+            font-family: "Inria Serif";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 27px */
+            margin-bottom: 0;
+
+            &:first-child {
+                margin-bottom: 16px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:nth-child(3),
+            &:nth-child(5) {
+                padding: 20px 0 16px;
+            }
+        }
+    }
+
+}
+
+.prlr_blg {
+    padding-top: 60px;
+
+    .card {
+        border: none;
+        border-radius: 0;
+        background-color: #fff;
+
+        img {
+            width: 100%;
+        }
+
+        .txt {
+            margin-top: 20px;
+
+            h4 {
+                color: #405D7B;
+                font-family: "Inria Serif";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+
+
+
+// !! 30-04-2022
+
+.contact-us {
+    padding: 60px 0;
+    h3 {
+        color: #325496;
+
+        /* Heading 32 */
+        font-family: "Telugu MN";
+        font-size: 32px;
+        line-height: 36px;
+        font-style: normal;
+        font-weight: 400;
+        // line-height: normal;
+        text-transform: capitalize;
+        // margin-bottom: 8px;
+        margin-bottom: 0;
+    }
+    p {
+        color: #466688;
+        font-family: "Inria Serif";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        margin-bottom: 24px;
+    }
+    .inputcontainer {
+        border: 1px solid #325496;
+        background: #f3efea;
+        margin-bottom: 28px;
+        color: #325496;
+        font-family: "Inria Serif";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: transparent;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            height: 100%;
+            height: 133px;
+            resize: none;
+        }
+    }
+    input[type="submit"] {
+        color: #405d7b;
+        font-family: "Telugu MN";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+        background: transparent;
+        line-height: 21px;
+    }
+}
+
+.contact-row {
+    padding-bottom: 0px;
+    .cnrowinner {
+        padding: 54px 30px;
+        background-size: cover !important;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                h4 {
+                    color: #395363;
+                    font-family: "Inria Serif";
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 20px;
+                }
+                a {
+                    color: #395363;
+                    font-family: "Inria Serif";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+                &:last-child {
+                    a {
+                        // text-decoration: underline;
+                        span {
+                            display: inline-block;
+                            border-bottom: 1px solid #395363;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about {
+    padding-top: 60px;
+    .abt-top {
+        h3 {
+            color: #39536e;
+            color: #39536e;
+            text-align: center;
+            font-family: "Telugu MN";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #405d7b;
+            text-align: center;
+            font-family: "Inria Serif";
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 135%; /* 32.4px */
+            text-transform: capitalize;
+            max-width: 610px;
+            margin: 0 auto;
+            span {
+                position: absolute;
+            }
+        }
+    }
+    .abt-mid {
+        padding: 60px 0;
+        p {
+            margin-bottom: 30px;
+            color: #466688;
+            font-family: "Inria Serif";
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 150%;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .abt-btm {
+        padding: 30px 38px;
+        border-radius: 12px;
+        background: rgba(255, 236, 236, 0.5);
+        position: relative;
+        margin-bottom: 60px;
+        .quotes {
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            &.quotes-1 {
+                left: 48px;
+                top: -22px;
+            }
+            &.quotes-2 {
+                right: 270px;
+                bottom: -21px;
+            }
+        }
+        p {
+            color: #405d7b;
+            text-align: center;
+            font-family: "Inria Serif";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 27px */
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .abt-gallery {
+        padding-bottom: 0;
+        .w40 {
+            width: 40%;
+        }
+        .w60 {
+            width: 60%;
+        }
+        .midalign {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .link {
+            color: #39536e;
+            font-family: "Inria Serif";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+        .gap20 {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+    }
+}

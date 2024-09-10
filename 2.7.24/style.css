@@ -1,0 +1,1675 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Telugu MN";
+  src: url(../fonts/Telugu\ MN.ttc);
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ol {
+  list-style: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+h1 {
+  color: #253647;
+  font-family: "Antic Didone";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Telugu MN";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  color: #325496;
+}
+
+p {
+  color: #466688;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn {
+  color: #405D7B;
+  font-family: "Telugu MN";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px;
+  padding: 0;
+  transition: all 0.4s;
+  border-bottom: 1px solid rgba(64, 92, 123, 0.7529411765);
+  border-radius: 0;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.btn:hover {
+  color: #405D7B;
+}
+
+header {
+  background-color: #fff;
+}
+header .menu-area .totl_head {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .menu-area .totl_head .main-logo {
+  max-width: 104px;
+}
+header .menu-area .totl_head .main_links {
+  width: calc(100% - 763px);
+}
+header .menu-area .totl_head .main_links #navigation ul {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  position: relative;
+}
+header .menu-area .totl_head .main_links #navigation ul li a {
+  color: #39536E;
+  font-family: "Telugu MN";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+header .menu-area .totl_head .main_links #navigation ul li.menu-item-has-children {
+  transition: all ease 0.4s;
+  position: relative;
+}
+header .menu-area .totl_head .main_links #navigation ul li.menu-item-has-children > a {
+  position: relative;
+}
+header .menu-area .totl_head .main_links #navigation ul li.menu-item-has-children > a::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/drp-arrw.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  top: 30px;
+  right: -16px;
+}
+header .menu-area .totl_head .main_links #navigation ul li.menu-item-has-children > a svg {
+  display: none;
+}
+header .menu-area .totl_head .main_links #navigation ul li.menu-item-has-children:hover > a::before {
+  rotate: 180deg;
+}
+header .menu-area .totl_head .main_links #navigation ul li.menu-item-has-children:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+header .menu-area .totl_head .main_links #navigation ul li.menu-item-has-children .sub-menu {
+  position: absolute;
+  background: rgba(239, 235, 235, 0.699);
+  width: 180px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.5s;
+  padding: 16px 0;
+  top: 52px;
+  left: 0;
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  align-items: baseline;
+  flex-direction: column;
+}
+header .menu-area .totl_head .main_links #navigation ul li.menu-item-has-children .sub-menu li {
+  width: 100%;
+}
+header .menu-area .totl_head .main_links #navigation ul li.menu-item-has-children .sub-menu li a {
+  color: #39536E;
+  font-family: "Telugu MN";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.hero_bnnr {
+  position: relative;
+}
+.hero_bnnr img {
+  width: 100%;
+}
+.hero_bnnr .top_text_div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 238px 0 319px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero_bnnr .top_text_div p {
+  color: #39536E;
+  font-family: "Telugu MN";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.hero_bnnr .top_text_div h1 {
+  max-width: 945px;
+}
+.hero_bnnr.innr_bnr h2 {
+  margin-bottom: 22px;
+  line-height: 28px;
+}
+.hero_bnnr.innr_bnr ul.brdcamp {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+}
+.hero_bnnr.innr_bnr ul.brdcamp li {
+  color: #405D7B;
+  font-family: "Telugu MN";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+.hero_bnnr.innr_bnr ul.brdcamp li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -19px;
+  background-image: url(../images/right-arrw.svg);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+}
+.hero_bnnr.innr_bnr ul.brdcamp li:last-child::before {
+  display: none;
+}
+.hero_bnnr.innr_bnr ul.brdcamp li a {
+  color: #405D7B;
+}
+
+.sec_2 {
+  padding: 60px 0 27px;
+}
+.sec_2 h2 {
+  line-height: 40px;
+  text-align: center;
+}
+.sec_2 .row {
+  margin-top: 40px;
+}
+.sec_2 .row .card {
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+  height: 100%;
+}
+.sec_2 .row .card .img {
+  background-color: #faf6f3;
+  padding: 35px 28px 35px 27px;
+}
+.sec_2 .row .card .img img {
+  width: 100%;
+}
+.sec_2 .row .card .txt {
+  margin-top: 24px;
+  text-align: center;
+}
+.sec_2 .row .card .txt h3 {
+  color: #39536E;
+  font-family: "Telugu MN";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+.sec_2 .row .card .txt p {
+  letter-spacing: -0.32px;
+  margin-bottom: 0;
+}
+
+.sec_3 .side_bnr {
+  background-color: #F2E7DA;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sec_3 .side_bnr .side_img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+.sec_3 .side_bnr .top_txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 90px;
+  display: flex;
+  align-items: center;
+}
+.sec_3 .side_bnr .top_txt h2 {
+  max-width: 417px;
+  margin-bottom: 0;
+  line-height: 32px;
+}
+.sec_3 .side_bnr .top_txt p {
+  margin: 10px 0 20px;
+}
+.sec_3 .sbscr {
+  text-align: center;
+  padding-top: 59px;
+  background-color: #F2E7DA;
+}
+.sec_3 .sbscr h2 {
+  margin-bottom: 0;
+  line-height: 30px;
+}
+.sec_3 .sbscr p {
+  margin: 20px 0;
+}
+.sec_3 .sbscr img {
+  margin-top: 46px;
+}
+
+.commision {
+  padding-top: 60px;
+}
+.commision .row {
+  row-gap: 40px;
+}
+.commision .col-12 h2 {
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 35px;
+}
+.commision .col-12 p {
+  text-align: center;
+  color: #405D7B;
+  font-weight: 700;
+  max-width: 956px;
+  margin: auto;
+}
+.commision .row {
+  margin-top: 40px;
+}
+.commision .row .card {
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+}
+.commision .row .card img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.commision .row .card p {
+  margin-bottom: 0;
+}
+.commision .row h5.cntct_line {
+  color: #405D7B;
+  font-family: "Telugu MN";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.commision .row h5 .btn {
+  color: #405D7B;
+  font-family: "Telugu MN";
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.blog {
+  padding-top: 62px;
+}
+.blog h2 {
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 16px;
+}
+.blog p {
+  text-align: center;
+  margin-bottom: 0;
+}
+.blog .row {
+  margin-top: 40px;
+}
+.blog .row .card {
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+}
+.blog .row .card img {
+  width: 100%;
+}
+.blog .row .card .txt {
+  margin-top: 20px;
+}
+.blog .row .card .txt h4 {
+  margin-bottom: 12px;
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer {
+  background-color: #f5f5f6;
+  width: 100%;
+  padding: 43px 0 31px;
+  margin-top: 59px;
+}
+footer .sbcrb {
+  margin-bottom: 15px;
+}
+footer .sbcrb h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 29px;
+}
+footer .sbcrb form {
+  position: relative;
+}
+footer .sbcrb form .form-control {
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid #B4B4B4;
+  background-color: #fff;
+  padding: 16px 9px 18px 19px;
+  color: #000;
+  font-family: "Inria Serif";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .sbcrb form .form-control:focus {
+  box-shadow: none;
+}
+footer .sbcrb form .form-control::-moz-placeholder {
+  color: #466688;
+  font-family: "Inria Serif";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .sbcrb form .form-control::placeholder {
+  color: #466688;
+  font-family: "Inria Serif";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .sbcrb form .btn {
+  position: absolute;
+  right: 35px;
+  top: 17px;
+  line-height: 17px;
+  border-bottom: none;
+  text-decoration: underline;
+  font-family: "Telugu MN";
+}
+footer .logo {
+  width: 203px;
+}
+footer ul.scl {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+footer ul.scl li a {
+  width: 41px;
+  height: 41px;
+  border: 1px solid #405D7B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul.scl li a img {
+  width: 24px;
+  height: 24px;
+}
+footer ul.pge_links {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: center;
+}
+footer ul.pge_links li a {
+  color: #39536E;
+  font-family: "Telugu MN";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+footer .row:last-child {
+  padding-top: 48px;
+  border-top: 1px solid rgba(57, 83, 110, 0.6);
+  margin-top: 48px;
+}
+footer .row:last-child .col-lg-3 {
+  padding: 0;
+}
+footer .row:last-child p {
+  color: #39536E;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+footer .row:last-child ul {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 23px;
+       column-gap: 23px;
+  justify-content: flex-end;
+}
+footer .row:last-child ul li a {
+  color: #39536E;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gallery {
+  padding-top: 60px;
+}
+.gallery .row {
+  row-gap: 40px;
+}
+.gallery .col-lg-3 {
+  padding: 0 15px;
+}
+.gallery .col-lg-3 img {
+  width: 100%;
+}
+.gallery .col-lg-4 img {
+  width: 100%;
+}
+.gallery.abstrt .row {
+  justify-content: center;
+}
+.gallery.abstrt .col-lg-6 {
+  padding: 0 15px;
+}
+.gallery.abstrt .col-lg-6 img {
+  width: 100%;
+}
+
+.blog_post {
+  padding-top: 60px;
+}
+.blog_post .row {
+  row-gap: 30px;
+}
+.blog_post .row:last-child {
+  margin-top: 30px;
+}
+.blog_post .card {
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+}
+.blog_post .card img {
+  width: 100%;
+}
+.blog_post .card .txt {
+  margin-top: 20px;
+}
+.blog_post .card .txt h4 {
+  color: #39536E;
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.blog_post ul.pegination {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.blog_post ul.pegination li a {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  border: 1px solid #EBE4DE;
+  transition: all 0.4s;
+  color: #39536E;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog_post ul.pegination li a:hover {
+  background-color: #EBE4DE;
+}
+.blog_post ul.pegination li:last-child {
+  background-image: url(../images/double-arrw.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.4s;
+}
+
+.blg_txt {
+  padding-top: 60px;
+}
+.blg_txt .txt h2 {
+  line-height: 27px;
+  margin-bottom: 16px;
+}
+.blg_txt .txt h5 {
+  color: #405D7B;
+  font-family: "Telugu MN";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: lowercase;
+  margin-bottom: 20px;
+}
+.blg_txt .txt p {
+  color: #466688;
+  font-family: "Inria Serif";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 28px;
+}
+.blg_txt .txt p:last-child {
+  margin-bottom: 20px;
+}
+.blg_txt .img_dv {
+  text-align: end;
+  position: relative;
+}
+.blg_txt .img_dv .sml_img {
+  position: absolute;
+  bottom: -210px;
+  left: 0;
+}
+
+.blg_detls {
+  padding-top: 60px;
+}
+.blg_detls h2 {
+  line-height: 29px;
+  margin-bottom: 48px;
+  font-size: 27px;
+  color: #405D7B;
+  text-transform: capitalize;
+}
+.blg_detls .col-lg-6 img {
+  width: 100%;
+}
+.blg_detls .dtl {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.blg_detls .dtl img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.blg_detls .dtl .txt p {
+  color: #405D7B;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 0;
+}
+.blg_detls .dtl .txt ul {
+  display: flex;
+  -moz-column-gap: 23px;
+       column-gap: 23px;
+  align-items: center;
+  padding: 3px 0;
+}
+.blg_detls .dtl .txt ul li {
+  color: #405D7B;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+}
+.blg_detls .dtl .txt ul li::before {
+  content: ".";
+  position: absolute;
+  font-size: 37px;
+  color: #405D7B;
+  top: 1px;
+  left: -15px;
+  line-height: 0;
+}
+.blg_detls .dtl .txt ul li:first-child::before {
+  display: none;
+}
+.blg_detls .scl_shr {
+  margin-top: 40px;
+}
+.blg_detls .scl_shr h5 {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+.blg_detls .scl_shr ul.shre {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.blg_detls .scl_shr ul.shre li a {
+  width: 41px;
+  height: 41px;
+  border: 1px solid #405D7B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blg_detls .scl_shr ul.shre li a img {
+  width: 24px;
+  height: 24px;
+}
+.blg_detls .dtl_txt {
+  margin-top: 30px;
+}
+.blg_detls .dtl_txt h6 {
+  margin-bottom: 20px;
+  color: #39536E;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  font-family: "Inria Serif";
+}
+.blg_detls .dtl_txt p {
+  color: #39536E;
+  font-family: "Inria Serif";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 27px */
+  margin-bottom: 0;
+}
+.blg_detls .dtl_txt p:first-child {
+  margin-bottom: 16px;
+}
+.blg_detls .dtl_txt p:last-child {
+  margin-bottom: 0;
+}
+.blg_detls .dtl_txt p:nth-child(3), .blg_detls .dtl_txt p:nth-child(5) {
+  padding: 20px 0 16px;
+}
+
+.prlr_blg {
+  padding-top: 60px;
+}
+.prlr_blg .card {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+.prlr_blg .card img {
+  width: 100%;
+}
+.prlr_blg .card .txt {
+  margin-top: 20px;
+}
+.prlr_blg .card .txt h4 {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.contact-us {
+  padding: 60px 0;
+}
+.contact-us h3 {
+  color: #325496;
+  /* Heading 32 */
+  font-family: "Telugu MN";
+  font-size: 32px;
+  line-height: 36px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.contact-us p {
+  color: #466688;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  margin-bottom: 24px;
+}
+.contact-us .inputcontainer {
+  margin-bottom: 28px;
+  /* 24px */
+}
+.contact-us .inputcontainer input[type=text],
+.contact-us .inputcontainer input[type=email],
+.contact-us .inputcontainer input[type=tel] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  border: 1px solid #325496;
+  background: #f3efea;
+  margin-bottom: 0;
+  color: #325496;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.contact-us .inputcontainer textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  height: 100%;
+  height: 133px;
+  resize: none;
+  border: 1px solid #325496;
+  background: #f3efea;
+  margin-bottom: 0;
+  color: #325496;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.contact-us input[type=submit] {
+  color: #405d7b;
+  font-family: "Telugu MN";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  background: transparent;
+  line-height: 21px;
+  border-bottom: none;
+}
+
+.contact-row {
+  padding-bottom: 0px;
+}
+.contact-row .cnrowinner {
+  padding: 54px 30px;
+  background-size: cover !important;
+}
+.contact-row .cnrowinner ul {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-row .cnrowinner ul li h4 {
+  color: #395363;
+  font-family: "Inria Serif";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.contact-row .cnrowinner ul li a {
+  color: #395363;
+  font-family: "Inria Serif";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-row .cnrowinner ul li a img {
+  margin-right: 10px;
+}
+.contact-row .cnrowinner ul li:last-child a span {
+  display: inline-block;
+  border-bottom: 1px solid #395363;
+}
+
+.about {
+  padding-top: 60px;
+}
+.about .abt-top h3 {
+  color: #39536e;
+  color: #39536e;
+  text-align: center;
+  font-family: "Telugu MN";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about .abt-top p {
+  color: #405d7b;
+  text-align: center;
+  font-family: "Inria Serif";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 135%;
+  /* 32.4px */
+  text-transform: capitalize;
+  max-width: 610px;
+  margin: 0 auto;
+}
+.about .abt-top p span {
+  position: absolute;
+}
+.about .abt-mid {
+  padding: 60px 0;
+}
+.about .abt-mid p {
+  margin-bottom: 30px;
+  color: #466688;
+  font-family: "Inria Serif";
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%;
+}
+.about .abt-mid p:last-child {
+  margin-bottom: 0;
+}
+.about .abt-btm {
+  padding: 30px 38px;
+  border-radius: 12px;
+  background: rgba(255, 236, 236, 0.5);
+  position: relative;
+  margin-bottom: 60px;
+}
+.about .abt-btm .quotes {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+}
+.about .abt-btm .quotes.quotes-1 {
+  left: 48px;
+  top: -22px;
+}
+.about .abt-btm .quotes.quotes-2 {
+  right: 270px;
+  bottom: -21px;
+}
+.about .abt-btm p {
+  color: #405d7b;
+  text-align: center;
+  font-family: "Inria Serif";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  /* 27px */
+  margin-bottom: 20px;
+}
+.about .abt-btm p:last-child {
+  margin-bottom: 0;
+}
+.about .abt-gallery {
+  padding-bottom: 0;
+}
+.about .abt-gallery .w40 {
+  width: 40%;
+}
+.about .abt-gallery .w60 {
+  width: 60%;
+}
+.about .abt-gallery .midalign {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.about .abt-gallery .link {
+  color: #39536e;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.about .abt-gallery .gap20 {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.purchase {
+  padding-top: 60px;
+}
+.purchase .prdct .main_prdct {
+  width: 100%;
+}
+.purchase .prdct .sclt {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.purchase .prdct .sclt img {
+  max-width: 194px;
+}
+.purchase .summary .product_title {
+  color: #39536E;
+  font-family: "Telugu MN";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.purchase .summary p.type {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.purchase .summary p.size {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.purchase .summary br {
+  display: none;
+}
+.purchase .summary p.price .woocommerce-Price-currencySymbol,
+.purchase .summary p.price bdi {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.purchase .summary form.cart {
+  margin: 16px 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.purchase .summary form.cart::before {
+  display: none !important;
+}
+.purchase .summary form.cart::after {
+  display: none !important;
+}
+.purchase .summary form.cart .quantity {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #B4B4B4;
+  padding: 3px 5px;
+  margin: 0 !important;
+}
+.purchase .summary form.cart .quantity .screen-reader-text {
+  display: none;
+}
+.purchase .summary form.cart .quantity input[type=number]::-webkit-inner-spin-button,
+.purchase .summary form.cart .quantity input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.purchase .summary form.cart .quantity .minus,
+.purchase .summary form.cart .quantity .plus {
+  border: none;
+  font-size: 28px;
+  height: 34px;
+  width: 34px;
+  background-color: #FFB342;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purchase .summary form.cart .quantity .qty {
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  padding: 6px 10px;
+  border: none;
+  max-width: 80px;
+  color: #39536E;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.purchase .summary form.cart .single_add_to_cart_button {
+  width: 48%;
+  background: #D3CFC8;
+  padding: 12px 24px 9px !important;
+  text-align: center !important;
+  border-bottom: none !important;
+  border-radius: 0;
+  color: #39536E;
+  font-family: "Telugu MN";
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  border-bottom: none;
+  padding: 0;
+  max-height: 44px;
+}
+.purchase .summary form.cart .single_add_to_cart_button:hover {
+  background-color: #D3CFC8;
+  color: #39536e;
+}
+.purchase .summary form #scrapy {
+  margin-top: 0 !important;
+  margin-bottom: 16px;
+  width: auto;
+}
+.purchase .summary .product_meta .posted_in {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+  display: none;
+}
+.purchase .summary .product_meta .posted_in a {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.purchase .wcgs-woocommerce-product-gallery {
+  row-gap: 30px;
+  margin-bottom: 0 !important;
+}
+.purchase .wcgs-woocommerce-product-gallery .gallery-navigation-carousel-wrapper {
+  margin-top: 0 !important;
+}
+.purchase .wcgs-woocommerce-product-gallery .gallery-navigation-carousel-wrapper .swiper-wrapper {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.purchase .wcgs-woocommerce-product-gallery .swiper-wrapper {
+  height: inherit !important;
+}
+.purchase .wcgs-woocommerce-product-gallery .wcgs-slider-image {
+  width: 100% !important;
+}
+.purchase .wcgs-woocommerce-product-gallery .wcgs-slider-image img {
+  width: 100% !important;
+  max-height: 511px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.purchase .wcgs-woocommerce-product-gallery .swiper-wrapper .wcgs-thumb {
+  margin: 0;
+  max-width: none !important;
+  width: 23.2% !important;
+  display: inline-block;
+  margin: 0;
+  margin-right: 0 !important;
+}
+.purchase .wcgs-woocommerce-product-gallery .swiper-wrapper .wcgs-thumb.swiper-slide-thumb-active img {
+  border: 2px solid #635B4F !important;
+}
+.purchase .wcgs-woocommerce-product-gallery .swiper-wrapper .wcgs-thumb img {
+  width: 100%;
+  max-height: 123px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: none !important;
+}
+.purchase .wcgs-woocommerce-product-gallery .swiper-wrapper .wcgs-thumb img:hover {
+  border: 2px solid #635B4F !important;
+}
+.purchase .tab_sec {
+  width: 100%;
+  display: inline-block;
+}
+.purchase .tab_sec ul.tabs {
+  margin-bottom: 30px !important;
+  margin: 0;
+  padding: 0 !important;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #B4B4B4;
+}
+.purchase .tab_sec ul.tabs li {
+  margin: 0 !important;
+  padding: 0px 0 10px 0 !important;
+  overflow: hidden;
+  position: relative;
+  border: none !important;
+  background-color: transparent !important;
+}
+.purchase .tab_sec ul.tabs li::before {
+  display: none;
+}
+.purchase .tab_sec ul.tabs li:after {
+  display: none;
+}
+.purchase .tab_sec ul.tabs li a {
+  color: rgba(64, 93, 123, 0.8) !important;
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+  padding: 0 !important;
+}
+.purchase .tab_sec ul.tabs li.active a {
+  color: #39536E !important;
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+}
+.purchase .tab_sec .woocommerce-Tabs-panel {
+  margin-bottom: 0 !important;
+}
+.purchase .tab_sec .woocommerce-Tabs-panel h2,
+.purchase .tab_sec .woocommerce-Tabs-panel h4 {
+  color: #39536E;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.purchase .tab_sec .woocommerce-Tabs-panel p {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+.purchase .tab_sec .woocommerce-Tabs-panel p:last-child {
+  margin-bottom: 0;
+}
+.purchase .tab_sec #reviews #review_form_wrapper {
+  margin-top: 25px;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond::before, .purchase .tab_sec #reviews #review_form_wrapper #respond:after {
+  display: none;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond .comment-reply-title {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form {
+  margin-top: 15px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form p {
+  margin-bottom: 0;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-notes {
+  order: 5;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-cookies-consent {
+  order: 6;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .form-submit {
+  order: 7;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-rating {
+  order: 4;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-rating label {
+  margin-bottom: 8px;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-rating .stars {
+  font-size: 26px;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-rating a {
+  color: #253647;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-rating {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 0;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-comment {
+  order: 3;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-comment label {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-comment textarea {
+  resize: none;
+  min-height: 180px;
+  border-radius: 10px;
+  border: 1px solid #253647;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-author {
+  order: 1;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-email {
+  order: 2;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-author,
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-email {
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-author label,
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-email label {
+  margin-bottom: 5px;
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-author input,
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .comment-form-email input {
+  padding: 6px 12px 6px;
+  border-radius: 4px;
+  border: 1px solid #253647;
+  background: #FFF;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.purchase .tab_sec #reviews #review_form_wrapper #respond form .form-submit input {
+  background: #D3CFC8;
+  padding: 9.5px 24px;
+  text-align: center;
+  border: none;
+  /* border-bottom is redundant when border is none */
+  border-radius: 0;
+  color: #39536E;
+  font-family: "Telugu MN";
+  font-size: 16px;
+  display: inline-flex;
+  /* changed to inline-flex to apply flex properties */
+  align-items: center;
+  /* centers text vertically */
+  justify-content: center;
+  /* centers text horizontally */
+  font-weight: 400;
+  line-height: normal;
+  /* reset line-height */
+  text-transform: capitalize;
+  height: 38px;
+  /* ensure this matches the desired height */
+  box-sizing: border-box;
+}
+.purchase .tab_sec #reviews #comments .woocommerce-Reviews-title {
+  margin-bottom: 10px;
+}
+.purchase .tab_sec #reviews #comments ol.commentlist {
+  padding-left: 0;
+}
+.purchase .tab_sec #reviews #comments ol.commentlist::before {
+  display: none;
+}
+.purchase .tab_sec #reviews #comments ol.commentlist::after {
+  display: none;
+}
+.purchase .tab_sec #reviews #comments ol.commentlist li::before {
+  display: none;
+}
+.purchase .tab_sec #reviews #comments ol.commentlist .comment-text {
+  margin-left: 0 !important;
+}
+.purchase .dtls h3 {
+  color: #39536E;
+  font-family: "Telugu MN";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+.purchase .dtls p.type {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.purchase .dtls p.size {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.purchase .add_cart {
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.purchase .add_cart .cart {
+  width: 48%;
+}
+.purchase .add_cart .cart .qty-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #B4B4B4;
+  padding: 5px;
+}
+.purchase .add_cart .cart .qty-container .input-qty {
+  text-align: center;
+  padding: 6px 10px;
+  border: none;
+  max-width: 80px;
+  color: #39536E;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.purchase .add_cart .cart .qty-container .qty-btn-minus,
+.purchase .add_cart .cart .qty-container .qty-btn-plus {
+  border: none;
+  font-size: 10px;
+  height: 34px;
+  width: 34px;
+  background-color: #FFB342;
+  color: #fff;
+}
+.purchase .add_cart .cart .qty-container .qty-btn-minus:focus,
+.purchase .add_cart .cart .qty-container .qty-btn-plus:focus {
+  box-shadow: none;
+}
+.purchase .add_cart .btn {
+  width: 48%;
+  background: #D3CFC8;
+  padding: 10px 24px;
+  text-align: center;
+  border-bottom: none;
+}
+.purchase .add_cart .btn a {
+  color: #39536E;
+  text-align: center;
+  font-family: "Telugu MN";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  border-bottom: none;
+  padding: 0;
+}
+.purchase .room_viwer {
+  margin-bottom: 16px;
+}
+.purchase .room_viwer img {
+  width: 100%;
+}
+.purchase .rvw {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+
+.tab_sec {
+  padding-top: 60px;
+}
+.tab_sec ul.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 32px;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #B4B4B4;
+}
+.tab_sec ul.tabs li {
+  float: left;
+  margin: 0;
+  cursor: pointer;
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+  color: rgba(64, 93, 123, 0.8);
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.tab_sec ul.tabs li.active {
+  color: #39536E;
+  font-family: "Inria Serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.tab_sec .tab_last {
+  border-right: 1px solid #333;
+}
+.tab_sec .tab_container {
+  margin-top: 30px;
+  width: 100%;
+  background: #fff;
+  overflow: auto;
+}
+.tab_sec .tab_container .tab_content {
+  padding: 0;
+  display: none;
+}
+.tab_sec .tab_container .tab_content .txt h4 {
+  color: #39536E;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.tab_sec .tab_container .tab_content .txt p {
+  color: #405D7B;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+.tab_sec .tab_container .tab_content .txt p:last-child {
+  margin-bottom: 0;
+}
+.tab_sec .tab_drawer_heading {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .tab_sec .tabs {
+    display: none;
+  }
+  .tab_sec .tab_drawer_heading {
+    background-color: transparent;
+    color: #39536e;
+    border: 1px solid #39536e;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 5px 20px;
+    display: block;
+    cursor: pointer;
+    font-family: "Inria Serif";
+    font-size: 20px;
+    text-align: center;
+  }
+  .tab_sec .d_active {
+    background-color: #666;
+    color: #fff;
+  }
+}
+
+.wpcf7-spinner {
+  display: none !important;
+}/*# sourceMappingURL=style.css.map */
